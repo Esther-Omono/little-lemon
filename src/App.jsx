@@ -1,7 +1,13 @@
+import Footer from './layout/Footer';
+import Header from './layout/Header';
+import Main from './layout/Main';
+
 function App() {
   return (
     <>
-      <h1>Hello Little Lemon!</h1>
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }

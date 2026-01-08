@@ -1,0 +1,21 @@
+/* Header */
+header {
+  padding: 1rem 8rem 1rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-family: var(--Karla);
+}
+
+header nav ul li:hover {
+  color: var(--yellow);
+}

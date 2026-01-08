@@ -1,3 +1,15 @@
+:root {
+  --forest: #495e57;
+  --yellow: #f4ce14;
+  --coral: #ee9972;
+  --peach: #fbdabb;
+  --grey: #edefee;
+  --black: #333333;
+
+  --Markazi: 'Markazi Text', serif;
+  --Karla: 'Karla', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
