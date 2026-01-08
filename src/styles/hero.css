@@ -16,14 +16,12 @@
 
 .hero-text h1 {
   color: var(--yellow);
-  font-size: 3.5rem;
   font-family: var(--Markazi);
   font-weight: normal;
 }
 
 .hero-text h2 {
   color: var(--grey);
-  font-size: 2.5rem;
   font-family: var(--Markazi);
   font-weight: normal;
 }
@@ -35,14 +33,7 @@
 }
 
 .cta-button {
-  padding: 0.7rem 1rem;
-  border-radius: 2rem;
-  background-color: var(--yellow);
-  border: 1px solid var(--yellow);
   margin-top: 2rem;
-  color: var(--forest);
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .cta-button:hover,
@@ -59,4 +50,22 @@
   justify-self: end;
   border-radius: 1rem;
   object-fit: cover;
+}
+
+/*-- Media queries --*/
+
+@media (max-width: 792px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .hero-text {
+    grid-row: 1;
+  }
+
+  .hero-image {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }

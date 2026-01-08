@@ -1,0 +1,50 @@
+.specials-container {
+  padding: 0 8rem 2rem 8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1.25rem;
+}
+
+.specials-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specials-heading h2 {
+  font-family: var(--Markazi);
+  font-weight: normal;
+  color: var(--forest);
+}
+
+.specials-btn:hover,
+.specials-btn:focus {
+  background-color: white;
+}
+
+/*-- Media queries --*/
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .specials-heading {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 692px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .specials-heading {
+    grid-column: 1 / 2;
+  }
+}
