@@ -33,3 +33,7 @@ h2 {
   font-weight: bold;
   cursor: pointer;
 }
+
+section {
+  padding: 2rem 8rem 0 8rem;
+}
