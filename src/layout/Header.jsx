@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.jpg';
 import '../styles/header.css';
 
@@ -15,7 +16,9 @@ const Header = () => {
 
   return (
     <header>
-      <img src={Logo} width={250} alt='Little Lemon Logo' className='logo' />
+      <Link to='/'>
+        <img src={Logo} width={250} alt='Little Lemon Logo' className='logo' />
+      </Link>
 
       <button
         className={`hamburger ${isMenuOpen ? 'open' : ''}`}
@@ -29,12 +32,24 @@ const Header = () => {
 
       <nav className={isMenuOpen ? 'open' : ''}>
         <ul>
-          <li onClick={closeMenu}>HOME</li>
-          <li onClick={closeMenu}>ABOUT</li>
-          <li onClick={closeMenu}>MENU</li>
-          <li onClick={closeMenu}>RESERVATIONS</li>
-          <li onClick={closeMenu}>ORDER ONLINE</li>
-          <li onClick={closeMenu}>LOGIN</li>
+          <li onClick={closeMenu}>
+            <Link to='/'>HOME</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to='/about'>ABOUT</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to='/menu'>MENU</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to='/reservations'>RESERVATIONS</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to='/order-online'>ORDER ONLINE</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to='/login'>LOGIN</Link>
+          </li>
         </ul>
       </nav>
 

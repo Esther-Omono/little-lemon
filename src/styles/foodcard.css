@@ -58,10 +58,16 @@
 }
 
 .food-card-footer-inner {
-  display: flex;
   align-items: center;
-  gap: 1rem;
+
   font-weight: bold;
+}
+.food-card-footer-inner a {
+  color: inherit;
+  text-decoration: none;
+
+  display: flex;
+  gap: 1rem;
 }
 
 /*-- Media queries --*/

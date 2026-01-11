@@ -3,6 +3,7 @@ import FoodCard from './FoodCard';
 import greekSalad from '../assets/greek-salad.jpg';
 import bruschetta from '../assets/bruschetta.jpg';
 import lemonDessert from '../assets/lemon-dessert.jpg';
+import { Link } from 'react-router-dom';
 
 const Specials = () => {
   const meals = [
@@ -34,7 +35,9 @@ const Specials = () => {
     <section className='specials-container'>
       <div className='specials-heading'>
         <h2>This week specials!</h2>
-        <button className='btn specials-btn'>Online Menu</button>
+        <Link to='/order-online'>
+          <button className='btn specials-btn'>Online Menu</button>
+        </Link>
       </div>
       <div className='grid'>
         {meals.map((meal, index) => (

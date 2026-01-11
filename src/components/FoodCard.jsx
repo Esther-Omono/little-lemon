@@ -1,5 +1,6 @@
 import { Motorbike } from 'lucide-react';
 import '../styles/foodcard.css';
+import { Link } from 'react-router-dom';
 
 const FoodCard = ({ meal }) => {
   return (
@@ -14,8 +15,10 @@ const FoodCard = ({ meal }) => {
       <div className='food-card-footer'>
         <p>{meal.description}</p>
         <div className='food-card-footer-inner'>
-          <p>Order a delivery</p>
-          <Motorbike />
+          <Link to='/order-online'>
+            <p>Order a delivery</p>
+            <Motorbike />
+          </Link>
         </div>
       </div>
     </article>

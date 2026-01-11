@@ -35,6 +35,13 @@
 
   .specials-heading {
     grid-column: 1 / 3;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .specials-heading h2 {
+    font-size: 2rem;
   }
 }
 

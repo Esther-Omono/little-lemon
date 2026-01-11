@@ -1,10 +1,9 @@
-import React from 'react';
 import Hero from '../components/Hero';
 import Specials from '../components/Specials';
 import Testimonials from '../components/Testimonials';
 import AboutLittleLemon from '../components/AboutLittleLemon';
 
-const Main = () => {
+const Home = () => {
   return (
     <main>
       <Hero />
@@ -15,4 +14,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home;
